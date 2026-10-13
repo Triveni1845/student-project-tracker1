@@ -1,1 +1,164 @@
 
+/* Basic page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #263238;
+  background-color: #f4f0e7;
+}
+
+/* Main content */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+header p {
+  margin: 0;
+  color: #52615c;
+}
+
+/* Form and project list sections */
+section {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #deded7;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+/* Form fields */
+#project-form > div {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  font: inherit;
+  color: inherit;
+  background-color: #ffffff;
+  border: 1px solid #aab5af;
+  border-radius: 6px;
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 3px solid #e86e50;
+  outline-offset: 3px;
+}
+
+/* Buttons */
+button {
+  min-height: 44px;
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#save-button {
+  color: #ffffff;
+  background-color: #0d654f;
+}
+
+#save-button:hover {
+  background-color: #094d3c;
+}
+
+#cancel-button {
+  margin-left: 8px;
+  color: #263238;
+  background-color: #f4f0e7;
+  border-color: #aab5af;
+}
+
+/* Status message */
+#message {
+  margin: 16px 0 0;
+  overflow-wrap: anywhere;
+}
+
+/* Project list */
+#empty-state {
+  margin: 0;
+  color: #52615c;
+}
+
+#project-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+#project-list:empty {
+  display: none;
+}
+
+#project-list li {
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+/* Responsive layout */
+@media (max-width: 560px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  header {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  section {
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #cancel-button {
+    margin-left: 4px;
+  }
+}
